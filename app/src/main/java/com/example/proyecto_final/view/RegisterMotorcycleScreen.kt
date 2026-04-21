@@ -1,4 +1,5 @@
 package com.example.proyecto_final.view
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -69,7 +70,7 @@ fun RegisterMotorcycleScreen(navController: NavController) {
                             fontSize = 16.sp,
                             modifier = Modifier.padding(bottom = 16.dp)
                         )
-
+                        
                         InputField(label = "Marca", placeholder = "Ej: Honda, Yamaha, Suzuki...")
                         Spacer(modifier = Modifier.height(12.dp))
                         InputField(label = "Modelo", placeholder = "Ej: CB500F, MT-03, GSX-R750...")
@@ -77,9 +78,9 @@ fun RegisterMotorcycleScreen(navController: NavController) {
                         InputField(label = "Año", placeholder = "Ej: 2022")
                         Spacer(modifier = Modifier.height(12.dp))
                         InputField(label = "Kilometraje Actual", placeholder = "Ej: 15000", suffix = "km")
-
+                        
                         Spacer(modifier = Modifier.height(24.dp))
-
+                        
                         Button(
                             onClick = { navController.navigate(Screen.Dashboard.route) },
                             modifier = Modifier.fillMaxWidth().height(50.dp),
@@ -92,7 +93,7 @@ fun RegisterMotorcycleScreen(navController: NavController) {
                         }
                     }
                 }
-
+                
                 Card(
                     modifier = Modifier.fillMaxWidth(),
                     shape = RoundedCornerShape(12.dp),

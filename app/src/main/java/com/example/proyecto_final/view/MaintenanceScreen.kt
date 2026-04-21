@@ -20,7 +20,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.example.proyecto_final.ui.theme.Proyecto_finalTheme
+import com.example.proyecto_final.ui.theme.PROYECTO_FINALTheme
 
 @Composable
 fun MaintenanceScreen(navController: NavController) {
@@ -186,7 +186,7 @@ private fun MaintenanceItemCard(
 @Preview(showBackground = true)
 @Composable
 fun MaintenanceScreenPreview() {
-    Proyecto_finalTheme {
+    PROYECTO_FINALTheme {
         MaintenanceScreen(rememberNavController())
     }
 }
