@@ -19,8 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.example.proyecto_final.Screen
-import com.example.proyecto_final.ui.theme.Proyecto_finalTheme
+import com.example.proyecto_final.ui.theme.PROYECTO_FINALTheme
 
 @Composable
 fun DashboardScreen(navController: NavController) {
@@ -37,7 +36,7 @@ fun DashboardScreen(navController: NavController) {
                 .background(Color(0xFFF5F5F5))
         ) {
             HeaderSection()
-
+            
             Column(
                 modifier = Modifier.padding(16.dp),
                 verticalArrangement = Arrangement.spacedBy(16.dp)
@@ -45,7 +44,7 @@ fun DashboardScreen(navController: NavController) {
                 MileageCard()
                 MaintenanceCard()
                 DocumentsCard()
-
+                
                 Button(
                     onClick = { navController.navigate(Screen.GPS.route) },
                     modifier = Modifier
@@ -58,7 +57,7 @@ fun DashboardScreen(navController: NavController) {
                     Spacer(modifier = Modifier.width(8.dp))
                     Text("Iniciar Recorrido GPS")
                 }
-
+                
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(16.dp)
@@ -267,7 +266,7 @@ fun BottomNavigationBar(navController: NavController) {
 @Preview(showBackground = true)
 @Composable
 fun DashboardScreenPreview() {
-    Proyecto_finalTheme {
+    PROYECTO_FINALTheme {
         DashboardScreen(rememberNavController())
     }
 }
