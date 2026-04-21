@@ -12,7 +12,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.proyecto_final.ui.theme.Proyecto_finalTheme
+import com.example.proyecto_final.ui.theme.PROYECTO_FINALTheme
 
 @Composable
 fun LoginScreen(onLoginSuccess: () -> Unit) {
@@ -32,9 +32,9 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
             fontWeight = FontWeight.Bold,
             color = Color(0xFF1A237E)
         )
-
+        
         Spacer(modifier = Modifier.height(8.dp))
-
+        
         Text(
             text = "Inicia sesión para continuar",
             fontSize = 16.sp,
@@ -76,7 +76,7 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
         }
 
         Spacer(modifier = Modifier.height(16.dp))
-
+        
         TextButton(onClick = { /* TODO */ }) {
             Text("¿Olvidaste tu contraseña?", color = Color(0xFF1A237E))
         }
@@ -106,7 +106,7 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
 @Preview(showBackground = true)
 @Composable
 fun LoginScreenPreview() {
-    Proyecto_finalTheme {
+    PROYECTO_FINALTheme {
         LoginScreen(onLoginSuccess = {})
     }
 }
